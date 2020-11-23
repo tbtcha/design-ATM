@@ -4,6 +4,9 @@ public class CashDispenser {
     int totalFiveDollarBills;
     int totalTwentyDollarBills;
 
+    public CashDispenser() {
+    }
+
     public CashDispenser(int totalFiveDollarBills, int totalTwentyDollarBills) {
         this.totalFiveDollarBills = totalFiveDollarBills;
         this.totalTwentyDollarBills = totalTwentyDollarBills;

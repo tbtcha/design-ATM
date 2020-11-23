@@ -3,6 +3,9 @@ package Hardware;
 public class DepositSlot {
     double totalAmount;
 
+    public DepositSlot() {
+    }
+
     public DepositSlot(double totalAmount) {
         this.totalAmount = totalAmount;
     }

@@ -11,6 +11,9 @@ public class Account {
         this.availableBalance = availableBalance;
     }
 
+    public Account() {
+    }
+
     public int getAccountNumber() {
         return accountNumber;
     }

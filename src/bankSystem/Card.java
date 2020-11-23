@@ -15,6 +15,10 @@ public class Card {
         this.pin = pin;
     }
 
+    public Card() {
+
+    }
+
     public String getCardNumber() {
         return cardNumber;
     }

@@ -3,6 +3,10 @@ package Hardware;
 import enums.TransactionType;
 
 public class Screen {
+
+    public Screen() {
+    }
+
     public boolean showMessage(){
         return true;
     }

@@ -1,4 +1,4 @@
-package Transaction;
+package Transactions;
 
 import enums.TransactionStatus;
 import java.util.Date;
