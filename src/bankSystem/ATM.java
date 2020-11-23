@@ -1,6 +1,7 @@
 package bankSystem;
 
 import Hardware.*;
+import Transactions.Transaction;
 
 public class ATM {
     private int atmId;
@@ -12,8 +13,9 @@ public class ATM {
     private Keypad keypad = new Keypad();
     private CashDispenser cashDispenser = new CashDispenser();
     private Bank bank = new Bank();
+    private Transaction transaction = new Transaction();
 
-    public ATM(int atmId, Address location, DepositSlot depositSlot, CardReader cardReader, Printer printer, Screen screen, Keypad keypad, CashDispenser cashDispenser, Bank bank) {
+    public ATM(int atmId, Address location, DepositSlot depositSlot, CardReader cardReader, Printer printer, Screen screen, Keypad keypad, CashDispenser cashDispenser, Bank bank, Transaction transaction) {
         this.atmId = atmId;
         this.location = location;
         this.depositSlot = depositSlot;
@@ -23,6 +25,7 @@ public class ATM {
         this.keypad = keypad;
         this.cashDispenser = cashDispenser;
         this.bank = bank;
+        this.transaction = transaction;
     }
 
     public ATM() {
@@ -99,6 +102,14 @@ public class ATM {
 
     public void setBank(Bank bank) {
         this.bank = bank;
+    }
+
+    public Transaction getTransaction() {
+        return transaction;
+    }
+
+    public void setTransaction(Transaction transaction) {
+        this.transaction = transaction;
     }
 
     public boolean authenticateUser(){
